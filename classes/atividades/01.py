@@ -12,7 +12,7 @@ class Animal:
         print(f"O {self.nome} fez {self.idade} anos!")
 
 class Cachorro(Animal):
-    def __init__(self, nome: str, idade: int = 0):
+    def __init__(self, nome: str, idade: int = 0): 
         super().__init__(nome, "Cachorro", idade)
 
     def emitir_som(self):
