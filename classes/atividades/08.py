@@ -1,3 +1,4 @@
+
 class PetVirtual:
     def __init__(self, nome: str):
         self.nome = nome
@@ -7,7 +8,7 @@ class PetVirtual:
     def alimentar(self):
         if self.fome > 0:
             self.fome -= 2
-            
+           
             if self.fome < 0:
                 self.fome = 0
             print(f"{self.nome} foi alimentado! Fome atual: {self.fome}")
@@ -20,14 +21,9 @@ class PetVirtual:
         print(f"Você brincou com {self.nome}! Felicidade: {self.felicidade} | Fome: {self.fome}")
 
     def status(self):
-        print(f"\n--- Status de {self.nome} ---")
-        print(f"Fome: {self.fome}")
-        print(f"Felicidade: {self.felicidade}")
-        
+        print(f"Nome: {self.nome} | Fome: {self.fome} | Felicidade: {self.felicidade}")
         if self.fome >= 8:
             print(f"Atenção: {self.nome} precisa comer!")
-        print("-------------------------\n")
-
 
 meu_pet = PetVirtual("Pou")
 
