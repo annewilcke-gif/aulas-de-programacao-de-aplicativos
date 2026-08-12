@@ -9,11 +9,11 @@ class PetVirtual:
         if self.fome > 0:
             self.fome -= 2
            
-            if self.fome < 0:
-                self.fome = 0
+        if self.fome < 0:
+            self.fome = 0
             print(f"{self.nome} foi alimentado! Fome atual: {self.fome}")
         else:
-            print(f"{self.nome} já está de barriga cheia!")
+             print(f"{self.nome} já está de barriga cheia!")
 
     def brincar(self):
         self.felicidade += 2
